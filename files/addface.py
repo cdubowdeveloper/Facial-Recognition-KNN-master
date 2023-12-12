@@ -55,7 +55,10 @@ class AddFace:
         if face_data.size > 0:
             face_data = face_data.reshape(10, -1)  # Ensure consistent reshaping
 
-            # Load or create 'faces.pkl'
+
+            if not os.path.isdir("data"):
+                os.mkdir("data")
+            
             if 'faces.pkl' not in os.listdir('data/'):
                 with open('data/faces.pkl', 'wb') as w:
                     pickle.dump(face_data, w)
