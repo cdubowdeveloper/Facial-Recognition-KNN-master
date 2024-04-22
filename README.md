@@ -19,5 +19,4 @@ python main.py
 ```
 
 ## Demo
-https://github.com/cdubowdeveloper/Facial-Recognition-KNN-master/assets/28300827/e4b34582-ef6f-40bc-82e0-c90be3f86d16
 
